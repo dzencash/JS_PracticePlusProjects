@@ -1,0 +1,62 @@
+@import url(reset.css);
+
+body{
+	background-color: lightgrey;
+
+}
+
+fieldset, div{
+	margin: 5rem auto;
+	width: 20rem;
+	border: 2px solid black;
+	
+
+}
+form{
+/*	display: flex;
+	flex-direction: column;*/
+	font-size: 1.5rem;
+	min-width: 20rem;
+
+}
+
+label, input{
+	padding: .5rem .5rem;
+	margin: 0 1rem;
+	display: block;
+	
+}
+input[type="text"]{
+	width: 80%;
+	margin: auto;
+	margin-bottom: 1rem;
+}
+span{
+	font-size: 1rem;
+	padding-left: 1rem;
+	vertical-align: ;
+}
+input[type="radio"], span{
+	display: inline-block;
+	vertical-align: middle;
+	
+}
+
+button{
+	margin: 1rem 1rem;
+	width: 90%;
+	height: 2rem;
+}
+
+div{
+	box-sizing: border-box;
+	padding: .5rem;
+	font-size: 1.3rem;
+}
+div p{
+	width: 100px;
+	display: inline;
+}
+div span{
+	padding: 0;
+}

@@ -1,0 +1,18 @@
+
+/*this CSS use:
+font-family: 'Cairo', sans-serif;
+font-family: 'Play', sans-serif;
+font-family: 'Noto Sans SC', sans-serif;
+*/
+
+
+/*.main page elements projects page start*/
+
+.collection{
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	font-size: 2rem;
+	line-height: 3rem;
+	font-family: 'Noto Sans SC', sans-serif;
+	font-weight: 550;
+}

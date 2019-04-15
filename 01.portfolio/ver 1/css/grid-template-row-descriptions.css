@@ -1,0 +1,195 @@
+
+/*grid template row description home page start*/
+
+.page{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 1rem 1rem;
+	grid-template-areas: 
+	". header header header ."
+	". main main main ."
+	". main main main ."
+	"footer footer footer footer footer"
+	
+
+}
+
+/*header float start*/
+header{
+	grid-area: header;
+}
+header ul{
+	float: right;
+}
+header p{
+	float: left;
+}
+/*header float end*/
+
+/*header grid start*/
+/*header{
+	grid-area: header;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1rem 1rem;
+	grid-template-areas: 
+	"header-par header-ul"
+}
+header p{
+	grid-area: header-par;
+}
+header ul{
+	grid-area: header-ul;
+}
+*/
+/*header grid end*/
+
+/*div .page grid start*/
+.main{
+	grid-area: main;
+
+}
+/*div .page grid end*/
+
+/*footer grid start*/
+
+footer{
+	grid-area:footer;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 1rem 1rem;
+	grid-template-areas: 
+	" . footer-first . footer-second . ";
+
+}
+.copywright{
+	grid-area: footer-first;
+}
+.socialMedia{
+	grid-area: footer-second;
+}
+
+/*footer grid end*/
+
+
+/*grid template row description projects page start*/
+
+.projects{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 1rem 1rem;
+	grid-template-areas: 
+	". header header header ."
+	". collection collection collection ."
+	". collection collection collection ."
+	"footer footer footer footer footer"
+	
+
+}
+.collection{
+	grid-area: collection;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem 1rem;
+	grid-template-areas:
+	"project-one project-two project-three"
+	"project-four project-five project-six" 
+}
+.collection div:nth-child(1){
+	grid-area: project-one;
+	min-height: 13rem;
+	max-height: 13rem;
+}
+.collection div:nth-child(2){
+	grid-area: project-two;
+	min-height: 13rem;
+	max-height: 13rem;
+}
+.collection div:nth-child(3){
+	grid-area: project-three;
+	min-height: 13rem;
+	max-height: 13rem;	
+}
+.collection div:nth-child(4){
+	grid-area: project-four;
+	min-height: 13rem;
+	max-height: 13rem;
+}
+.collection div:nth-child(5){
+	grid-area: project-five;
+	min-height: 13rem;
+	max-height: 13rem;
+}
+.collection div:nth-child(6){
+	grid-area: project-six;
+	min-height: 13rem;
+	max-height: 13rem;
+}
+
+
+/*grid template row description skills page start*/
+.skills{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 1rem 1rem;
+	grid-template-areas: 
+	". header header header ."
+	". skill skill skill ."
+	". skill skill skill ."
+	". skill skill skill ."
+	". skill skill skill ."
+	"footer footer footer footer footer"
+	
+}
+.skills-container{
+	grid-area: skill;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem 1rem;
+	grid-template-areas:
+	"skill-one skill-two skill-three"
+	"skill-four skill-five skill-six"
+	"skill-seven skill-eight skill-nine";	 
+}
+
+.skills-container div{
+	text-align: center;
+	
+}
+.skills-container div:nth-child(1){
+	grid-area: skill-one;
+	min-height: 13rem;
+
+}
+.skills-container div:nth-child(2){
+	grid-area: skill-two;
+	min-height: 13rem;
+}
+.skills-container div:nth-child(3){
+	grid-area: skill-three;
+	min-height: 13rem;
+}
+.skills-container div:nth-child(4){
+	grid-area: skill-four;
+	min-height: 13rem;
+}
+.skills-container div:nth-child(5){
+	grid-area: skill-five;
+	min-height: 13rem;
+}
+.skills-container div:nth-child(6){
+	grid-area: skill-six;
+	min-height: 13rem;
+}
+.skills-container div:nth-child(7){
+	grid-area: skill-seven;
+	min-height: 13rem;
+}
+.skills-container div:nth-child(8){
+	grid-area: skill-eight;
+	min-height: 13rem;
+}
+.skills-container div:nth-child(9){
+	grid-area: skill-nine;
+	min-height: 13rem;
+}

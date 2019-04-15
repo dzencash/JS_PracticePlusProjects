@@ -1,0 +1,66 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Cairo|Noto+Sans+SC|Play');
+
+/*this CSS use:
+font-family: 'Cairo', sans-serif;
+font-family: 'Play', sans-serif;
+font-family: 'Noto Sans SC', sans-serif;
+*/
+
+
+
+
+body{
+	background-color: #fff;
+
+}
+
+/*main fonts styles start*/
+header{
+	font-family: 'Cairo', sans-serif;
+}
+.main{
+	font-family: 'Noto Sans SC', sans-serif;
+	font-weight: 550;
+}
+
+footer{
+	font-family: 'Play', sans-serif;
+}
+
+
+/*main fonts styles end*/
+
+
+/*header elements end*/
+
+header{
+	height: 5rem;
+	border-bottom: .1rem solid grey;
+}
+header p{
+	margin: 2rem 0;
+	font-size: 1.4rem;
+}
+header ul{
+	display: flex;
+	margin: 2rem 0;
+
+}
+header ul li{
+	padding-right: 1rem;
+}
+
+/*header elements end*/
+
+
+/*.main page elements home page start*/
+
+.main{
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	font-size: 2rem;
+	line-height: 3rem;
+}
+
+/*.main page elements home page  end*/

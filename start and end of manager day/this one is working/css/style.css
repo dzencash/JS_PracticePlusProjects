@@ -1,0 +1,15 @@
+@import url(reset.css);
+
+body{
+	background-color: lightgrey;
+
+}
+form{
+	display: flex;
+	flex-direction: column;
+	width: 15em; 
+}
+
+input, label, .answer{
+	margin: .2em .5em 0 .5em;
+}

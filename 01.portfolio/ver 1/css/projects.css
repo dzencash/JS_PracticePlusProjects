@@ -1,0 +1,63 @@
+
+/*this CSS use:
+font-family: 'Cairo', sans-serif;
+font-family: 'Play', sans-serif;
+font-family: 'Noto Sans SC', sans-serif;
+*/
+
+
+/*.main page elements projects page start*/
+
+.collection{
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	font-size: 2rem;
+	line-height: 3rem;
+	font-family: 'Noto Sans SC', sans-serif;
+	font-weight: 550;
+}
+
+.collection div{
+	border: .1rem solid rgb(190,190,190);
+	border-radius: 15%;
+}
+/*all projects background styles*/
+.collection div{
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*backgroundImage differences*/
+.collection div:nth-child(1){
+	background-image: url(../img/projects/translator.PNG);
+}
+.collection div:nth-child(2){
+	background-image: url(../img/projects/donut.PNG);
+}
+.collection div:nth-child(3){
+	background-image: url(../img/projects/tulip.PNG);
+}
+/*backgroundImage differences end*/
+/*put backgrounImage:none & backgroundColor:grey after main backgroundImage so now it works*/
+.collection div:hover{
+	background-color: rgba(150,150,150, .1);
+	background-image: none;
+	transition: 2s;
+}
+/*put backgrounImage:none & backgroundColor:grey after main backgroundImage so now it works end*/
+.collection div article{
+	opacity: 0;
+	font-size: 1.2rem;
+	text-decoration: none;
+	line-height: 2rem;
+	font-family: 'Play', sans-serif;
+	padding: .6rem 0 0 .3rem;
+}
+.collection div article h5, strong{
+	font-weight: 700;
+}
+.collection div article h5{
+	padding-bottom: .5rem;
+}
+
