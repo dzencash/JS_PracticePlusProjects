@@ -4,3 +4,26 @@ body{
 	background-color: lightgrey;
 
 }
+
+article h1,h2{
+	font-size: 2rem;
+	width: 60%;
+	margin: auto;
+}
+div, article{
+	width: 80%;
+	margin: 2rem auto;
+	
+}
+div section:first-child{
+	background-color: black;
+	width: 25rem;
+	height: 25rem;
+	float: left;
+}
+div section:last-child{
+	background-color: white;
+	width: 25rem;
+	height: 25rem;
+	float: right;
+}

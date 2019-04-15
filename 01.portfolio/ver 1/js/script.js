@@ -58,6 +58,33 @@ projectThree.addEventListener('mouseover', addDefinitThree);
 projectThree.addEventListener('mouseout', deleteDefenitThree);
 //next code is work for projectThree area finish
 
+//next code is work for projectFour area start
+let addDefinitFour = () =>{articleFour.style.opacity = '1';}
+let deleteDefenitFour = () =>{articleFour.style.opacity = '0';}
+
+
+projectFour.addEventListener('mouseover', addDefinitFour);
+projectFour.addEventListener('mouseout', deleteDefenitFour);
+//next code is work for projectFour area finish
+
+//next code is work for projectFive area start
+let addDefinitFive = () =>{articleFive.style.opacity = '1';}
+let deleteDefenitFive = () =>{articleFive.style.opacity = '0';}
+
+
+projectFive.addEventListener('mouseover', addDefinitFive);
+projectFive.addEventListener('mouseout', deleteDefenitFive);
+//next code is work for projectFive area finish
+
+//next code is work for projectSix area start
+let addDefinitSix = () =>{articleSix.style.opacity = '1';}
+let deleteDefenitSix = () =>{articleSix.style.opacity = '0';}
+
+
+projectSix.addEventListener('mouseover', addDefinitSix);
+projectSix.addEventListener('mouseout', deleteDefenitSix);
+//next code is work for projectSix area finish
+
 
 
 // //next code do not work
@@ -78,3 +105,9 @@ projectThree.addEventListener('mouseout', deleteDefenitThree);
 // 		article.style.opacity = '0';
 // 	}
 // }
+
+
+
+
+
+
