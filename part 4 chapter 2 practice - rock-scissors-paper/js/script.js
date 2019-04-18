@@ -20,7 +20,7 @@ if (player==rock){
 }else{
 	alert('Fail! Press F5 to repeat!')
 }
-// Рандомное число 0, 1 или 2 — разберем это позже, пока не заморачивайтесь
+// Рандомное число 0, 1 или 2
 let computer = Math.floor(Math.random() * 3);
 
 if (computer==rock){
