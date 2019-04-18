@@ -90,7 +90,7 @@ footer{
 	grid-area: collection;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 1rem 1rem;
+	grid-gap: 2% 1%;
 	grid-template-areas:
 	"project-one project-two project-three"
 	"project-four project-five project-six" 
@@ -158,38 +158,38 @@ footer{
 }
 .skills-container div:nth-child(1){
 	grid-area: skill-one;
-	min-height: 13rem;
+	
 
 }
 .skills-container div:nth-child(2){
 	grid-area: skill-two;
-	min-height: 13rem;
+	
 }
 .skills-container div:nth-child(3){
 	grid-area: skill-three;
-	min-height: 13rem;
+	
 }
 .skills-container div:nth-child(4){
 	grid-area: skill-four;
-	min-height: 13rem;
+	
 }
 .skills-container div:nth-child(5){
 	grid-area: skill-five;
-	min-height: 13rem;
+	
 }
 .skills-container div:nth-child(6){
 	grid-area: skill-six;
-	min-height: 13rem;
+	
 }
 .skills-container div:nth-child(7){
 	grid-area: skill-seven;
-	min-height: 13rem;
+	
 }
 .skills-container div:nth-child(8){
 	grid-area: skill-eight;
-	min-height: 13rem;
+	
 }
 .skills-container div:nth-child(9){
 	grid-area: skill-nine;
-	min-height: 13rem;
+	
 }

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo|Noto+Sans+SC|Play');
+
+/*this CSS use:
+font-family: 'Cairo', sans-serif;
+font-family: 'Play', sans-serif;
+font-family: 'Noto Sans SC', sans-serif;
+*/
+
+@keyframes opac{
+	0%{opacity: 1;}
+	18%{opacity: 1;}
+	20%{opacity: 0;}
+	100%{opacity: 0;}
+}
+@keyframes opacTwo{
+	0%{opacity: 0;}
+	20%{opacity: 0;}
+	25%{opacity: 1;}
+	40%{opacity: 1;}
+	45%{opacity: 0;}
+	100%{opacity: 0;}
+}
+@keyframes opacThree{
+	0%{opacity: 0;}
+	45%{opacity:0;}
+	50%{opacity: 1;}
+	65%{opacity: 1;}
+	70%{opacity: 0;}
+	100%{opacity: 0;}
+}
+@keyframes opacFour{
+	0%{opacity: 0;}
+	70%{opacity: 0;}
+	75%{opacity: 1;}
+	90%{opacity: 1;}
+	100%{opacity: 0;}
+	
+}
+.main h1 #span{
+	width: 10px;
+	margin-left: .5rem;
+}
+.main span{
+	position: absolute;
+	/*margin-top: -3rem;
+	margin-left: 29rem;*/
+}
+
+.main span span:nth-child(1){
+	color: navy;
+	animation-name: opac;
+	animation-iteration-count: infinite;
+	
+	animation-duration: 15s;
+	opacity: 0;
+	
+}
+.main span span:nth-child(2){
+	color: navy;
+	animation-name: opacTwo;
+	animation-iteration-count: infinite;
+	animation-duration: 15s;
+	opacity: 0;
+	animation-timing-function:cubic-bezier(0,0,1,0).;
+}
+.main span span:nth-child(3){
+	color: navy;
+	animation-name: opacThree;
+	animation-iteration-count: infinite;
+	animation-duration: 15s;
+	
+}
+.main span span:nth-child(4){
+	color: navy;
+	animation-name: opacFour;
+	animation-iteration-count: infinite;
+	animation-duration: 15s;
+	
+}

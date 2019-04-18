@@ -64,3 +64,72 @@ header ul li{
 }
 
 /*.main page elements home page  end*/
+
+
+/*social media block in footer start*/
+.socialMedia{
+	opacity: .7;
+
+}
+
+.socialMedia:hover{
+	opacity: 1;
+	transition: 2s;
+}
+.socialMedia a:nth-child(1) div{
+	background-image: url(https://image.freepik.com/free-icon/vk-reproductor_318-1867.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 2.4rem;
+	height: 2.4rem;
+	vertical-align: bottom;
+	display: inline-block;
+	
+}
+.socialMedia a:nth-child(2) div{
+	background-image: url(http://www.logospng.com/images/120/black-instagram-logo-babaimage-120683.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 2rem;
+	height: 2rem;
+
+	display: inline-block;
+	
+}
+
+.socialMedia a:nth-child(3) div{
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Jb9TxsXaEKTfCC2NrVrQXt0q3MyBr27u8KavjiE_bomL957j);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 2rem;
+	height: 2rem;
+	
+	display: inline-block;
+	
+}
+
+.socialMedia a:nth-child(4) div{
+	background-image: url(https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 2rem;
+	height: 2rem;
+	
+	display: inline-block;
+	
+}
+
+
+/*social media block in footer end*/
+
+/*copywright block in footer start*/
+.copywright p{
+	width: 50%;
+
+}
+
+/*copywright block in footer end*/

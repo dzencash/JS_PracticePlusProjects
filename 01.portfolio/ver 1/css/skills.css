@@ -7,12 +7,20 @@ font-family: 'Noto Sans SC', sans-serif;
 
 
 /*.main page elements projects page start*/
-
-.collection{
+.skills-container{
 	padding-top: 5rem;
 	padding-bottom: 5rem;
-	font-size: 2rem;
-	line-height: 3rem;
-	font-family: 'Noto Sans SC', sans-serif;
-	font-weight: 550;
+}
+.skills-container div{
+	margin: auto;
+	border: .2rem solid rgba(120, 120, 120, .8);
+	border-radius: 50%;
+	max-width: 10rem;
+	max-height: 10rem;
+
+}
+
+.skills-container div p{
+	padding: 40% 10%;
+
 }

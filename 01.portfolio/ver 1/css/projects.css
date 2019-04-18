@@ -11,7 +11,7 @@ font-family: 'Noto Sans SC', sans-serif;
 .collection{
 	padding-top: 5rem;
 	padding-bottom: 5rem;
-	font-size: 2rem;
+	/*font-size: 2rem;*/
 	line-height: 3rem;
 	font-family: 'Noto Sans SC', sans-serif;
 	font-weight: 550;
@@ -19,7 +19,7 @@ font-family: 'Noto Sans SC', sans-serif;
 
 .collection div{
 	border: .1rem solid rgb(190,190,190);
-	border-radius: 15%;
+	/*border-radius: 15%;*/
 }
 /*all projects background styles*/
 .collection div{
@@ -31,12 +31,23 @@ font-family: 'Noto Sans SC', sans-serif;
 /*backgroundImage differences*/
 .collection div:nth-child(1){
 	background-image: url(../img/projects/translator.PNG);
+	background-position: top left;
 }
 .collection div:nth-child(2){
 	background-image: url(../img/projects/donut.PNG);
 }
 .collection div:nth-child(3){
 	background-image: url(../img/projects/tulip.PNG);
+	background-position: top left;
+}
+.collection div:nth-child(4){
+	background-image: url(../img/projects/sin.PNG);
+}
+.collection div:nth-child(5){
+	background-image: url(../img/projects/rock.PNG);
+}
+.collection div:nth-child(6){
+	background-image: url(../img/projects/manager.PNG);
 }
 /*backgroundImage differences end*/
 /*put backgrounImage:none & backgroundColor:grey after main backgroundImage so now it works*/
@@ -48,7 +59,7 @@ font-family: 'Noto Sans SC', sans-serif;
 /*put backgrounImage:none & backgroundColor:grey after main backgroundImage so now it works end*/
 .collection div article{
 	opacity: 0;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	text-decoration: none;
 	line-height: 2rem;
 	font-family: 'Play', sans-serif;
