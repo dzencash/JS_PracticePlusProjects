@@ -1,8 +1,3 @@
-
-
-done
-
-
 const button = document.querySelector('button');
 const popup = document.querySelector('div .popup');
 const closePopup = document.querySelector('div .closePopup');
