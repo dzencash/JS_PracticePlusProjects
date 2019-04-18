@@ -80,3 +80,9 @@
   top: 20px;
   right: 20px;
 }
+.fa-bars:before {
+    content: "\2603";
+}
+.fa-times:before {
+    content: "\2603";
+}
