@@ -11,8 +11,8 @@ let names = [
 ]
 ];
 
-let first = names[0];
-let second = names[1];
+//  let first = names[0];
+//  let second = names[1];
 
 // for(key of names[0]){
 // 	console.log(key)
