@@ -49,9 +49,9 @@ for(let i = 0; i<(names[0].length+names[1].length); i++){
 // }
 //sample above works
 
-for(key of names[0]){
-	console.log(key);
-}
-for(key in names[1]){
-	console.log(names[1][key]);
-}
+// for(key of names[0]){
+// 	console.log(key);
+// }
+// for(key in names[1]){
+// 	console.log(names[1][key]);
+// }
