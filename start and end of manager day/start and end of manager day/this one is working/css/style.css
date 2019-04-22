@@ -1,0 +1,30 @@
+@import url(reset.css);
+
+body{
+	background-color: lightgrey;
+
+}
+form{
+	display: flex;
+	flex-direction: column;
+	width: 15em; 
+}
+
+input, label, .answer{
+	margin: .2em .5em 0 .5em;
+}
+.page{
+	
+	padding: 1rem;
+}
+
+form{
+/*	border:1px solid black;*/	
+	float: left;
+
+}
+.form div:nth-child(2){
+/*	border:1px solid black;*/
+	overflow: hidden;
+	padding-left: 1rem;
+}
