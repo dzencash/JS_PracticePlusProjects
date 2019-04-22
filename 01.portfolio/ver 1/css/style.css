@@ -40,6 +40,7 @@ header{
 }
 header p{
 	margin: 2rem 0;
+
 	font-size: 1.4rem;
 }
 header ul{
@@ -49,6 +50,7 @@ header ul{
 }
 header ul li{
 	padding-right: 1rem;
+	font-size: 1.2rem;
 }
 
 /*header elements end*/
@@ -69,12 +71,18 @@ header ul li{
 /*social media block in footer start*/
 .socialMedia{
 	opacity: .7;
+	text-align: right;
+
 
 }
 
 .socialMedia:hover{
 	opacity: 1;
 	transition: 2s;
+}
+.socialMedia a div{
+	width: 2rem;
+	height: 2rem;
 }
 .socialMedia a:nth-child(1) div{
 	background-image: url(https://image.freepik.com/free-icon/vk-reproductor_318-1867.jpg);
@@ -92,8 +100,7 @@ header ul li{
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 2rem;
-	height: 2rem;
+	
 
 	display: inline-block;
 	
@@ -104,8 +111,7 @@ header ul li{
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 2rem;
-	height: 2rem;
+	
 	
 	display: inline-block;
 	
@@ -116,8 +122,7 @@ header ul li{
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 2rem;
-	height: 2rem;
+	
 	
 	display: inline-block;
 	
@@ -128,8 +133,53 @@ header ul li{
 
 /*copywright block in footer start*/
 .copywright p{
-	width: 50%;
+	width: 70%;
 
 }
 
 /*copywright block in footer end*/
+
+
+
+/*mediaquery block start*/
+@media screen and (max-width: 800px){
+	
+header p{
+	padding-left: 0.5rem;
+	font-size: inherit;	
+}
+header ul li{
+	font-size: inherit;	
+}
+
+.main h1{
+	padding: 0 0.5rem;
+	max-width: 90%;
+}
+.copywright p{
+	width: 60%;
+	padding: 0 0.5rem;
+	font-size: 0.8rem;
+	margin: 0 0 2rem 0;
+}
+.socialMedia{
+	padding: 0 1rem;
+}
+.socialMedia a div{
+	width: 1.7rem;
+	height: 1.7rem;
+}
+.socialMedia a:nth-child(1) div{
+	width: 2rem;
+	height: 2rem;
+}
+
+
+}
+
+@media screen and (max-width: 800px){
+	header p{
+			padding-left: 0.5rem;
+	}
+}
+/*mediaquery block end*/

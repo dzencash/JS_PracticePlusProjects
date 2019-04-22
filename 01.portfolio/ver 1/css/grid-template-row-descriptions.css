@@ -14,6 +14,7 @@
 
 }
 
+
 /*header float start*/
 header{
 	grid-area: header;
@@ -193,3 +194,178 @@ footer{
 	grid-area: skill-nine;
 	
 }
+
+/*mediaquery block start*/
+/*@media screen and(max-width: 340px){
+	.skills{
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 1rem 1rem;
+	grid-template-areas: 
+	"header"
+	"skill"
+	"skill"
+	"skill"
+	"skill"
+	"footer"
+	
+}
+.skills-container{
+	grid-area: skill;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 1rem 1rem;
+	grid-template-areas:
+	"skill-one"
+	"skill-two"
+	"skill-three"
+	"skill-four"
+	"skill-five"
+	"skill-six"
+	"skill-seven"
+	"skill-eight"
+	"skill-nine";	 
+}
+}*/
+@media screen and (max-width: 800px){
+.page{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1rem 1rem;
+	grid-template-areas: 
+	"header header"
+	"main main"
+	"main main"
+	"footer footer"
+	
+
+}
+.projects{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1rem 1rem;
+	grid-template-areas: 
+	"header header"
+	"collection collection"
+	"collection collection"
+	"footer footer"
+}
+.collection{
+	grid-area: collection;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 2% 1%;
+	grid-template-areas:
+	"project-one project-two"
+	"project-three project-four"
+	"project-five project-six";
+	padding: 0 0.5rem;
+	margin: 0 0 4rem 0;
+	
+}
+.skills{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1rem 1rem;
+	grid-template-areas: 
+	"header header"
+	"skill skill"
+	"skill skill"
+	"skill skill"
+	"skill skill"
+	"footer footer"
+	
+}
+.skills-container{
+	grid-area: skill;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem 1rem;
+	grid-template-areas:
+	"skill-one skill-two skill-three"
+	"skill-four skill-five skill-six"
+	"skill-seven skill-eight skill-nine";	 
+}
+
+footer{
+	grid-area:footer;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 0.2rem 0.2rem;
+	grid-template-areas: 
+	"footer-first footer-second";
+
+}
+
+
+}	
+
+@media screen and (max-width: 500px){
+	.page{
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 1rem 1rem;
+	grid-template-areas: 
+	"header"
+	"main"
+	"main"
+	"footer"
+	
+
+}
+.projects{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 1rem 1rem;
+	grid-template-areas: 
+	"header"
+	"collection"
+	"collection"
+	"footer"
+}
+.collection{
+	grid-area: collection;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 2% 1%;
+	grid-template-areas:
+	"project-one"
+	"project-two"
+	"project-three"
+	"project-four"
+	"project-five"
+	"project-six";
+	padding: 0 0.5rem;
+	margin: 0 0 4rem 0;
+	
+}
+.skills{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1rem 1rem;
+	grid-template-areas: 
+	"header header"
+	"skill skill"
+	"skill skill"
+	"skill skill"
+	"skill skill"
+	"footer footer"
+	
+}
+.skills-container{
+	grid-area: skill;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1rem 1rem;
+	grid-template-areas:
+	"skill-one skill-two"
+	"skill-three skill-four"
+	"skill-five skill-six"
+	"skill-seven skill-eight"
+	"skill-nine skill-nine";	 
+}
+
+}
+
+
+/*mediaquery block end*/
