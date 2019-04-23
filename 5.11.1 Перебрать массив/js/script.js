@@ -15,14 +15,23 @@ let names = [
 // for(let i = 0; i<names[0][0].length+names[0][1].length+names[1][0].length+names[1][1].length, i++){
 
 // }
-
-for(let i = 0; i<(names.length); i++){
-	for(key of names[0][i]){
-		console.log(key);
+//sample below works
+// for(let i = 0; i<(names.length); i++){
+// 	for(key of names[0][i]){
+// 		console.log(key);
+// 	}
+// 	for(key of names[1][i]){
+// 		console.log(key);
+// 	}
+// }
+//sample above works
+for(let i = 0; i<names.length; i++){
+	for(counter=0;counter<names[i].length; counter++){
+		for(key in names){
+			console.log(names[i][counter][key]);
+		}
 	}
-	for(key of names[1][i]){
-		console.log(key);
-	}
+	
 }
 
 
