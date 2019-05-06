@@ -28,17 +28,17 @@ container.innerHTML = '<h1><strong>The price</strong> of coins: </h1>';
 let divOne = document.createElement('div');
 divOne.className = 'crypto-item';
 divOne.style.width = '20rem';
-divOne.innerHTML = '<h2><strong>'+crypto[0].name+'</strong><p>'+crypto[0].price+'</p></h2>';
+divOne.innerHTML = '<h2><strong>'+crypto[0].name+'</strong><p id="bitcoinPrice">'+crypto[0].price+'</p></h2>';
 
 let divTwo = document.createElement('div');
 divTwo.className = 'crypto-item';
 divTwo.style.width = '20rem';
-divTwo.innerHTML = '<h2><strong>'+crypto[1].name+'</strong><p>'+crypto[1].price+'</p></h2>';
+divTwo.innerHTML = '<h2><strong>'+crypto[1].name+'</strong><p id="ethereumPrice">'+crypto[1].price+'</p></h2>';
 
 let divThree = document.createElement('div');
 divThree.className = 'crypto-item';
 divThree.style.width = '20rem';
-divThree.innerHTML = '<h2><strong>'+crypto[2].name+'</strong><p>'+crypto[2].price+'</p></h2>';
+divThree.innerHTML = '<h2><strong>'+crypto[2].name+'</strong><p id="litecoinPrice">'+crypto[2].price+'</p></h2>';
 
 //Сделаем цену шрифтом поменьше
 window.onload = ()=>{

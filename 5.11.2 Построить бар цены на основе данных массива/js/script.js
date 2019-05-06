@@ -31,40 +31,42 @@ let thirdWidth = parseInt((lowWidth/maxWidth)*100);
 let myFucn = function(){
 if(bitPrice>ethPrice && bitPrice>litPrice){
   divOneBar.style.width = firstWidth+'%';
-  console.log('bitcoin is the biggest');
+  // console.log('bitcoin is the biggest');
   var what = 'bitcoin';
-  console.log('our champion is: '+what);
+  // console.log('our champion is: '+what);
   divOneBar.style.width = firstWidth+'%';
-}else{console.log('bitcoin is not the biggest')};
+}
+// else{console.log('bitcoin is not the biggest')};
 
 if(what == 'bitcoin' && ethPrice>litPrice){
-	console.log('ethereum is the second');
+	// console.log('ethereum is the second');
   divTwoBar.style.width = secondWidth+'%';
   divThreeBar.style.width = thirdWidth+'%';
-	console.log('litecoin is the last');
+	// console.log('litecoin is the last');
 }if(what == 'bitcoin' && litPrice>ethPrice){
-  console.log('litecoin is the second');
-  console.log('ethereum is the last');
+  // console.log('litecoin is the second');
+  // console.log('ethereum is the last');
   divTwoBar.style.width = thirdWidth+'%';
   divThreeBar.style.width = secondWidth+'%';
 }
 
 if(ethPrice>bitPrice && ethPrice>litPrice){
   divTwoBar.style.width = firstWidth+'%';
-  console.log('ethereum is the biggest');
+  // console.log('ethereum is the biggest');
   what = 'ethereum';
-  console.log('our champion is: '+what);
+  // console.log('our champion is: '+what);
   divTwoBar.style.width = firstWidth+'%';
-}else{console.log('ethereum is not the biggest')};
+}
+// else{console.log('ethereum is not the biggest')};
 
 if(what == 'ethereum' && bitPrice>litPrice){
-	console.log('bitcoin is the second');
-	console.log('litecoin is the last');
+	// console.log('bitcoin is the second');
+	// console.log('litecoin is the last');
   divOneBar.style.width = secondWidth+'%';
   divThreeBar.style.width = thirdWidth+'%';
 }if(what == 'ethereum' && litPrice>bitPrice){
-  console.log('litecoin is the second');
-  console.log('bitcoin is the last');
+  // console.log('litecoin is the second');
+  // console.log('bitcoin is the last');
   divThreeBar.style.width = secondWidth+'%';
   divOneBar.style.width = thirdWidth+'%';
 }
@@ -72,20 +74,21 @@ if(what == 'ethereum' && bitPrice>litPrice){
 
 if(litPrice>bitPrice && litPrice>ethPrice){
   divThreeBar.style.width = firstWidth+'%';
-  console.log('litecoin is the biggest');
+  // console.log('litecoin is the biggest');
   what = 'litecoin';
-  console.log('our champion is: '+what);
+  // console.log('our champion is: '+what);
   divThreeBar.style.width = firstWidth+'%';
-}else{console.log('litecoin is not the biggest')};
+}
+// else{console.log('litecoin is not the biggest')};
 
 if(what == 'litecoin' && bitPrice>ethPrice){
-  console.log('bitcoin is the second');
-  console.log('ethereum is the last');
+  // console.log('bitcoin is the second');
+  // console.log('ethereum is the last');
   divOneBar.style.width = secondWidth+'%';
   divTwoBar.style.width = thirdWidth+'%';
 }if(what == 'litecoin' && ethPrice>bitPrice){
-  console.log('ethereum is the second');
-  console.log('bitcoin is the last');
+  // console.log('ethereum is the second');
+  // console.log('bitcoin is the last');
   divTwoBar.style.width = secondWidth+'%';
   divOneBar.style.width = thirdWidth+'%';
 }
@@ -97,6 +100,30 @@ buttonChoise.onclick =()=>{
   ethPrice = Number(prompt('Set Etherium Price'));
   litPrice = Number(prompt('Set Litecoin Price'));
   myFucn();
+
+cryptoPrice = [bitPrice, ethPrice, litPrice];
+
+console.log(crypto)
+function compare(a,b){
+  if (a>b) return 1;
+  if (a<b) return -1;
+}
+
+cryptoPrice.sort(compare);
+
+maxWidth = cryptoPrice[2];
+midWidth = cryptoPrice[1];
+lowWidth = cryptoPrice[0];
+console.log(maxWidth, midWidth, lowWidth);
+
+firstWidth = 100;
+secondWidth = parseInt((midWidth/maxWidth)*100);
+thirdWidth = parseInt((lowWidth/maxWidth)*100);
+
+document.querySelector('#bitcoinPrice').innerHTML = bitPrice;
+document.querySelector('#ethereumPrice').innerHTML = ethPrice;
+document.querySelector('#litecoinPrice').innerHTML = litPrice;
+myFucn();
 
 }
 
