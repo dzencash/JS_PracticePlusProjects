@@ -60,6 +60,16 @@
   background-color: navy;
 }
 
+.popup_container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: lightgrey;
+    opacity: .7;
+    display: none;
+}
+
 .popup {
   position: fixed;
   width: 500px;
@@ -81,8 +91,14 @@
   right: 20px;
 }
 .fa-bars:before {
-    content: "\2603";
+    content: "\2630";
 }
 .fa-times:before {
-    content: "\2603";
+    content: "\2716";
+}
+.disflex{
+  display: flex;
+}
+.disnone{
+  display: none !important;
 }
