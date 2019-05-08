@@ -19,7 +19,6 @@ let crypto = [
 
 
 
-
 // Создадим контейнер для блоков вложений, присвоим классНейм и заголовок
 let container = document.createElement('div');
 container.className = 'crypto-container';
@@ -28,17 +27,17 @@ container.innerHTML = '<h1><strong>The price</strong> of coins: </h1>';
 let divOne = document.createElement('div');
 divOne.className = 'crypto-item';
 divOne.style.width = '20rem';
-divOne.innerHTML = '<h2><strong>'+crypto[0].name+'</strong><p id="bitcoinPrice">'+crypto[0].price+'</p></h2>';
+divOne.innerHTML = '<h2><strong>'+crypto[0].name+'</strong><p class="crypto_price_par" id="bitcoinPrice">'+crypto[0].price+'</p></h2>';
 
 let divTwo = document.createElement('div');
 divTwo.className = 'crypto-item';
 divTwo.style.width = '20rem';
-divTwo.innerHTML = '<h2><strong>'+crypto[1].name+'</strong><p id="ethereumPrice">'+crypto[1].price+'</p></h2>';
+divTwo.innerHTML = '<h2><strong>'+crypto[1].name+'</strong><p class="crypto_price_par" id="ethereumPrice">'+crypto[1].price+'</p></h2>';
 
 let divThree = document.createElement('div');
 divThree.className = 'crypto-item';
 divThree.style.width = '20rem';
-divThree.innerHTML = '<h2><strong>'+crypto[2].name+'</strong><p id="litecoinPrice">'+crypto[2].price+'</p></h2>';
+divThree.innerHTML = '<h2><strong>'+crypto[2].name+'</strong><p class="crypto_price_par" id="litecoinPrice">'+crypto[2].price+'</p></h2>';
 
 //Сделаем цену шрифтом поменьше
 window.onload = ()=>{
@@ -85,7 +84,7 @@ let divOneBar = document.createElement('div');
 divOneBar.id = 'bitcoin';
 divOne.appendChild(divOneBar);
 // divOneBar.style.width = '20rem';
-divOneBar.style.maxWidth = '25rem';
+// divOneBar.style.maxWidth = '25rem';
 divOneBar.style.height = '1rem'
 divOneBar.style.backgroundColor = 'red';
 
@@ -94,7 +93,7 @@ let divTwoBar = document.createElement('div');
 divTwoBar.id = 'ethereum';
 divTwo.appendChild(divTwoBar);
 // divTwoBar.style.width = '16rem';
-divTwoBar.style.maxWidth = '25rem';
+// divTwoBar.style.maxWidth = '25rem';
 divTwoBar.style.height = '1rem'
 divTwoBar.style.backgroundColor = 'lightblue';
 
@@ -102,18 +101,18 @@ let divThreeBar = document.createElement('div');
 divThreeBar.id = 'litecoin';
 divThree.appendChild(divThreeBar);
 // divThreeBar.style.width = '12rem';
-divThreeBar.style.maxWidth = '25rem';
+// divThreeBar.style.maxWidth = '25rem';
 divThreeBar.style.height = '1rem';
 divThreeBar.style.backgroundColor = ('#4FE3C2');
 
 
 //Кнопка выбора 
 
-let buttonChoise = document.createElement('button');
-buttonChoise.id = 'button';
-container.insertBefore(buttonChoise, divOne);
-buttonChoise.style.height = '2rem';
-buttonChoise.innerHTML = 'Set the Price of Crypto';
-buttonChoise.style.fontSize = '1.3rem';
-buttonChoise.style.fontWeight = '600';
-buttonChoise.style.fontFamily ="Courier New";
+// let buttonChoise = document.createElement('button');
+// buttonChoise.id = 'button';
+// container.insertBefore(buttonChoise, divOne);
+// buttonChoise.style.height = '2rem';
+// buttonChoise.innerHTML = 'Set the Price of Crypto';
+// buttonChoise.style.fontSize = '1.3rem';
+// buttonChoise.style.fontWeight = '600';
+// buttonChoise.style.fontFamily ="Courier New";
