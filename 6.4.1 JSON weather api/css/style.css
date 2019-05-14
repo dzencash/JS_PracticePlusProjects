@@ -1,12 +1,8 @@
-<<<<<<< HEAD
 @import url(reset.css);
 
 body{
 	background-color: lightgrey;
 
-}
-
-.page{
 }
 .page div:first-child{
 	max-width: 50%;
@@ -43,40 +39,3 @@ a{
 	text-decoration: none;
 	color: inherit;
 }
-
-=======
-@import url(reset.css);
-
-body{
-	background-color: lightgrey;
-
-}
-
-.page{
-	margin: 10rem;
-}
-h1{
-	padding: .5rem 0;
-	font-weight: 600;
-}
-form{
-	border:.1rem solid tomato;
-}
-button{
-	margin: auto 1rem;
-
-}
-fieldset{
-	padding: 1rem;
-}
-
-input{
-	width: 100%;
-	font-size: 1.2rem;
-}
-label{
-	display: block;
-	padding-bottom: .5rem;
-}
-
->>>>>>> beb73fd938bb8bd3cd6590b3ba240fce14154b84
