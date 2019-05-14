@@ -1,0 +1,45 @@
+@import url(reset.css);
+
+body{
+	background-color: lightgrey;
+
+}
+
+.page{
+}
+.page div:first-child{
+	max-width: 50%;
+	margin: 5% auto;
+}
+h1{
+	padding: .5rem 0;
+	font-weight: 600;
+}
+form{
+	border: 1px solid grey;
+	box-sizing: border-box;
+}
+button{
+	margin: auto 1rem;
+
+}
+fieldset{
+	padding: 1rem;
+}
+fieldset:nth-of-type(3) button{
+	margin: 0;
+}
+
+input{
+	width: 100%;
+	font-size: 1.2rem;
+}
+label{
+	display: block;
+	padding: .5rem 0;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
