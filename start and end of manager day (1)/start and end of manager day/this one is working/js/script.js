@@ -1,5 +1,13 @@
 console.log('You are at '+window.location);
 
+// ----------------------------------------------------
+// 1. Не целое число в графе Деньги, На менеджера
+// 2. Нет автоматической подстановки даты
+// 3. Считает план от даты например 31 - 1 мая = план на 30 дней, а надо на 31 (смотри по тегу #dateValue)
+// ----------------------------------------------------
+
+
+
 
 // let submit = document.getElementById('submit'); работает и так и так
 let submit = document.querySelector('#submit');
@@ -46,8 +54,8 @@ submit.onclick = function (e){
 	e.preventDefault();
 	// Описания ожиданий на сегодня start
 	// var buyers = form.elements.expectBuy.value;
-	var expectFrom = (form.elements.expectBuy.value*13000);
-	var expectTo = (form.elements.expectBuy.value*22900);
+	var expectFrom = (form.elements.expectBuy.value*11900);
+	var expectTo = (form.elements.expectBuy.value*20815);
 	console.log(expectFrom);
 	console.log(expectTo);
 
@@ -64,7 +72,14 @@ submit.onclick = function (e){
 	
 
 	//Расчет план на день в деньгах, картах и на менеджера end
-	var planDay = (form.elements.plan.value-form.elements.moll.value)/(30-parseInt(form.elements.date.value));
+
+	//тег #dateValue
+	var dateValue = parseInt(form.elements.date.value);
+	dateValue = (dateValue-1);
+	console.log(dateValue)
+
+
+	var planDay = (form.elements.plan.value-form.elements.moll.value)/(31-(dateValue));
 	// console.log(planDay)
 	planMonthPlace.innerHTML = '2.1 Деньги: ' + planDay;
 	cartPlace.innerHTML = '2.2 КК: ' + parseInt((planDay/15000));
